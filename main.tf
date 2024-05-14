@@ -9,7 +9,7 @@ data "aws_availability_zones" "available" {}
 module "vpc1" {
   source = "./modules/VPC"
 
-  name = "Project_AWS"
+  name = "Project_AWS2"
   cidr = var.cidr_block
   azs  = data.aws_availability_zones.available.names
   tags = {
